@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="2" failed="1" ignored="0" total="6" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="24808" started-at="2018-10-07T12:57:09Z" finished-at="2018-10-07T12:57:34Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="24808" started-at="2018-10-07T12:57:09Z" finished-at="2018-10-07T12:57:34Z">
+      <class name="com.pack.TestCase">
+        <test-method status="PASS" signature="browserInitialization()[pri:0, instance:com.pack.TestCase@52f759d7]" name="browserInitialization" is-config="true" duration-ms="12190" started-at="2018-10-07T12:57:09Z" finished-at="2018-10-07T12:57:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitialization -->
+        <test-method status="PASS" signature="titleVerification()[pri:0, instance:com.pack.TestCase@52f759d7]" name="titleVerification" duration-ms="536" started-at="2018-10-07T12:57:22Z" finished-at="2018-10-07T12:57:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleVerification -->
+        <test-method status="PASS" signature="loginProfile()[pri:0, instance:com.pack.TestCase@52f759d7]" name="loginProfile" duration-ms="4637" started-at="2018-10-07T12:57:22Z" finished-at="2018-10-07T12:57:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginProfile -->
+        <test-method status="PASS" signature="validateProfile()[pri:0, instance:com.pack.TestCase@52f759d7]" name="validateProfile" duration-ms="85" started-at="2018-10-07T12:57:27Z" depends-on-methods="com.pack.TestCase.loginProfile" finished-at="2018-10-07T12:57:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateProfile -->
+        <test-method status="FAIL" signature="searchProduct(java.lang.String, java.lang.String)[pri:0, instance:com.pack.TestCase@52f759d7]" name="searchProduct" duration-ms="1379" started-at="2018-10-07T12:57:28Z" data-provider="iphone" depends-on-methods="com.pack.TestCase.validateProfile" finished-at="2018-10-07T12:57:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iphone x]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[100000.0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index: 1, Size: 1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+at java.util.ArrayList.rangeCheck(Unknown Source)
+at java.util.ArrayList.get(Unknown Source)
+at com.pack.TestCase.searchProduct(TestCase.java:136)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProduct -->
+        <test-method status="SKIP" signature="purchaseIphone(java.lang.String, java.lang.String)[pri:0, instance:com.pack.TestCase@52f759d7]" name="purchaseIphone" duration-ms="0" started-at="2018-10-07T12:57:29Z" data-provider="applewatch" depends-on-methods="com.pack.TestCase.searchProduct" finished-at="2018-10-07T12:57:29Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestCase.purchaseIphone(java.lang.String, java.lang.String)[pri:0, instance:com.pack.TestCase@52f759d7] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestCase.purchaseIphone(java.lang.String, java.lang.String)[pri:0, instance:com.pack.TestCase@52f759d7] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- purchaseIphone -->
+        <test-method status="SKIP" signature="goToCart()[pri:0, instance:com.pack.TestCase@52f759d7]" name="goToCart" duration-ms="0" started-at="2018-10-07T12:57:29Z" depends-on-methods="com.pack.TestCase.purchaseIphone" finished-at="2018-10-07T12:57:29Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestCase.goToCart()[pri:0, instance:com.pack.TestCase@52f759d7] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestCase.goToCart()[pri:0, instance:com.pack.TestCase@52f759d7] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCart -->
+        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:com.pack.TestCase@52f759d7]" name="terminateBrowser" is-config="true" duration-ms="4909" started-at="2018-10-07T12:57:29Z" finished-at="2018-10-07T12:57:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateBrowser -->
+      </class> <!-- com.pack.TestCase -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
